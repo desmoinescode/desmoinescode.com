@@ -35,16 +35,18 @@ module.exports = (grunt) ->
     concat:
       dist:
         src: [
-          'bower_components/jquery/jquery.min.js'
-          'bower_components/handlebars/handlebars.js'
-          'bower_components/ember/ember.min.js'
+          'src/jquery-1.9.1.js'
+          'src/handlebars-1.0.0-rc.4.js'
+          'src/ember.js'
+          'src/ember-data.js'
         ]
         dest: 'src/lib/deps.min.js'
       test:
         src: [
-          'bower_components/jquery/jquery.min.js'
-          'bower_components/handlebars/handlebars.js'
-          'bower_components/ember/ember.js'
+          'src/jquery-1.9.1.js'
+          'src/handlebars-1.0.0-rc.4.js'
+          'src/ember.js'
+          'src/ember-data.js'
         ]
         dest: 'src/lib/deps.min.js'
 
