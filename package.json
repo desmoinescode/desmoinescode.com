@@ -11,12 +11,12 @@
         "grunt-contrib-coffee": "*",
         "grunt-contrib-uglify": "*",
         "grunt-contrib-clean": "*",
-        "grunt-ember-template-compiler": "1.1.2",
+        "grunt-ember-template-compiler": "~>1.2.0",
         "load-grunt-config": "*"
     },
     "devDependencies": {
         "grunt-coffeelint": "*",
-        "grunt-karma-coveralls": "~2.0.1",
+        "grunt-karma-coveralls": "~2.2.0",
         "grunt-karma": "0.7.0",
         "karma-phantomjs-launcher": "*",
         "karma-chrome-launcher": "*",
