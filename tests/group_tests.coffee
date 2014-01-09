@@ -41,7 +41,7 @@ test "shows group twitter handle and url", ->
     equal text, "Twitter", "'#{text}' was twitter link text"
 
 test "does not show twitter link when not configured", ->
-  group_one = 
+  group_one =
     group:
       id: 1
       twitter: ''
@@ -54,7 +54,7 @@ test "does not show twitter link when not configured", ->
     equal 0, !!find(".twitter").length, "Twitter link should not have existed"
 
 test "shows group google group link", ->
-  group_one = 
+  group_one =
     group:
       id: 1
       google_group: 'group_one'
@@ -68,7 +68,7 @@ test "shows group google group link", ->
     equal text, "Google Group", "'#{text}' was google group link text"
 
 test "does not show google group link when not configured", ->
-  group_one = 
+  group_one =
     group:
       id: 1
       google_group: ''
@@ -81,7 +81,7 @@ test "does not show google group link when not configured", ->
     equal 0, !!find(".google-group").length, "Google Group link should not have existed"
 
 test "shows facebook link", ->
-  group_one = 
+  group_one =
     group:
       id: 1
       facebook: 'http://facebook.com/group_one'
@@ -95,7 +95,7 @@ test "shows facebook link", ->
     equal text, "Facebook", "'#{text}' was facebook link text"
 
 test "does not show facebook link when not configured", ->
-  group_one = 
+  group_one =
     group:
       id: 1
       facebook: ''

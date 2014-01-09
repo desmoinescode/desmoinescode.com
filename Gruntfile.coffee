@@ -1,6 +1,6 @@
 module.exports = (grunt) ->
 
-  grunt.initConfig require("load-grunt-config")(grunt)
+  require("load-grunt-config")(grunt)
 
   grunt.task.registerTask 'test', ['buildtest', 'karma']
   grunt.task.registerTask 'local', ['builddist', 'clean:local', 'concat:test', 'recess:bootstrap', 'connect']

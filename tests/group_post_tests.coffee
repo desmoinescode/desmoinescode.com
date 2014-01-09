@@ -1,11 +1,11 @@
 test "shows 10 most recent messages from the mailing list on group details page", ->
-  group_one = 
+  group_one =
     group:
       id: 1
       name: "Group One"
       posts: [1..10]
 
-  stub_ajax 'GET', '/groups', 
+  stub_ajax 'GET', '/groups',
     groups: [
       group_one
     ]
