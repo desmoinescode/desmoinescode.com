@@ -23,6 +23,5 @@ module 'DSMCodeTests',
   setup: ->
     Ember.run ->
       DSMCode.reset()
-      DSMCode.deferReadiness()
   teardown: ->
     $.mockjaxClear()

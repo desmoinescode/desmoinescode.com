@@ -27,8 +27,6 @@ test "shows 10 most recent messages from the mailing list on group details page"
   stub_ajax 'GET', '/posts',
     posts: expected
 
-  Ember.run DSMCode, 'advanceReadiness'
-
   visit('/group/1/').then ->
     for post, index in expected
       if index < 10

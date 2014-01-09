@@ -17,8 +17,6 @@ test "shows tweets on group details page", ->
   stub_ajax 'GET', '/tweets',
     tweets: expected
 
-  Ember.run DSMCode, 'advanceReadiness'
-
   visit('/group/1/').then ->
     for tweet, index in expected
       content = find(".tweets td:eq(#{index})").text()

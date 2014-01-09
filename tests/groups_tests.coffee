@@ -7,8 +7,6 @@ test "shows list of user groups", ->
   stub_ajax 'GET', '/groups',
     groups: expected
 
-  Ember.run DSMCode, 'advanceReadiness'
-
   visit('/').then ->
     for group, index in expected
       group_one  = find(".groups li:eq(#{index})").text()
@@ -17,8 +15,6 @@ test "shows list of user groups", ->
 test "shows correct title", ->
   stub_ajax 'GET', '/groups',
     groups: []
-
-  Ember.run DSMCode, 'advanceReadiness'
 
   visit('/').then ->
     value = find('.brand').text()
@@ -32,8 +28,6 @@ test "has links to each group", ->
       { id: 1, name: "Group One", }
       { id: 2, name: "Group Two", }
     ]
-
-  Ember.run DSMCode, 'advanceReadiness'
 
   visit('/').then ->
     equal 2, find('.group-link').length, "Missing group links"
