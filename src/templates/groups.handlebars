@@ -13,7 +13,7 @@
             <a class="dropdown-toggle" data-toggle="dropdown" href="#">User Groups<b class="caret"></b></a>
             <ul class="groups dropdown-menu">
               {{#each group in controller}}
-                <li>{{#linkTo 'group' group.id classNames="group-link"}}{{ group.name }}{{/linkTo}}</li>
+                <li>{{#link-to 'group' group.id classNames="group-link"}}{{ group.name }}{{/link-to}}</li>
               {{/each}}
             </ul>
           </li>
