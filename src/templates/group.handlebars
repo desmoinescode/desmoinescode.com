@@ -3,19 +3,19 @@
 
   <ul class="nav nav-pills">
     {{#if controller.website}}
-      <li><a {{bindAttr href="controller.website"}} class="website">Website</a></li>
+      <li><a {{bind-attr href="controller.website"}} class="website">Website</a></li>
     {{/if}}
 
     {{#if controller.twitter_handle}}
-      <li><a {{bindAttr href="controller.twitter_url"}} class="twitter">Twitter</a></li>
+      <li><a {{bind-attr href="controller.twitter_url"}} class="twitter">Twitter</a></li>
     {{/if}}
 
     {{#if controller.google_group}}
-      <li><a {{bindAttr href="controller.google_group_url"}} class="google-group">Google Group</a></li>
+      <li><a {{bind-attr href="controller.google_group_url"}} class="google-group">Google Group</a></li>
     {{/if}}
 
     {{#if controller.facebook}}
-      <li><a {{bindAttr href="controller.facebook"}} class="facebook">Facebook</a></li>
+      <li><a {{bind-attr href="controller.facebook"}} class="facebook">Facebook</a></li>
     {{/if}}
   </ul>
 </div>
