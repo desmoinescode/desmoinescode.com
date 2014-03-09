@@ -16,6 +16,16 @@
         "load-grunt-config": "*"
     },
     "devDependencies": {
+        "broccoli": "*",
+        "broccoli-cli": "*",
+        "broccoli-env": "*",
+        "broccoli-concat": "*",
+        "broccoli-uglify-js": "*",
+        "broccoli-template-compiler": "*",
+        "broccoli-coffee": "*",
+        "broccoli-static-compiler": "*",
+        "broccoli-less": "*",
+
         "grunt-coffeelint": "*",
         "grunt-karma-coveralls": "~2.0.1",
         "grunt-karma": "0.7.0",
