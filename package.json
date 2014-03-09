@@ -25,7 +25,7 @@
         "broccoli-coffee": "*",
         "broccoli-static-compiler": "*",
         "broccoli-less": "*",
-
+        "grunt-shell": "*",
         "grunt-coffeelint": "*",
         "grunt-karma-coveralls": "~2.0.1",
         "grunt-karma": "0.7.0",
